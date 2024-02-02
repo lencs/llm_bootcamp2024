@@ -23,7 +23,7 @@ class ChatbotTools:
     def setup_agent(self):
         # Define tool
         ddg_search = DuckDuckGoSearchRun()
-        wiki_agent = WikipediaQueryRun(api_wrapper = WikipediaAPIWrapper)
+        wiki_agent = WikipediaQueryRun(api_wrapper = WikipediaAPIWrapper())
         tools = [
             Tool(
                 name="DuckDuckGoSearch",
